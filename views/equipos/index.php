@@ -8,7 +8,6 @@ use yii\grid\GridView;
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
 $this->title = 'Equipos';
-$this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="equipos-index">
 
@@ -16,14 +15,14 @@ $this->params['breadcrumbs'][] = $this->title;
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
 
     <p>
-        <?= Html::a('Create Equipos', ['create'], ['class' => 'btn btn-success']) ?>
+        <?= Html::a('Crear Equipo', ['create'], ['class' => 'btn btn-success']) ?>
     </p>
 
     <?= GridView::widget([
         'dataProvider' => $dataProvider,
         'filterModel' => $searchModel,
         'columns' => [
-            ['class' => 'yii\grid\SerialColumn'],
+           
 
             'id_equipo',
             'nombre_equipo',
@@ -32,6 +31,7 @@ $this->params['breadcrumbs'][] = $this->title;
             'direccion_equipo',
             'email_equipo:email',
             'web_equipo',
+            
             'user_equipo',
             //'password_equipo',
             //'authkey',

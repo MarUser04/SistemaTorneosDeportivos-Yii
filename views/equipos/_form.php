@@ -12,28 +12,28 @@ use yii\widgets\ActiveForm;
 
     <?php $form = ActiveForm::begin(); ?>
 
-    <?= $form->field($model, 'nombre_equipo')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model, 'nombre_equipo')->textInput(['maxlength' => true, 'placeholder' => 'nombre del equipo']) ?>
 
-    <?= $form->field($model, 'shortname_equipo')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model, 'shortname_equipo')->textInput(['maxlength' => true, 'placeholder' => 'nombre corto']) ?>
 
-    <?= $form->field($model, 'fecha_equipo')->textInput() ?>
+    <?= $form->field($model, 'fecha_equipo')->textInput(['placeholder'=> 'yy/mm/dd']) ?>
 
-    <?= $form->field($model, 'direccion_equipo')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model, 'direccion_equipo')->textInput(['maxlength' => true, 'placeholder' => 'direccion(opcional)']) ?>
 
-    <?= $form->field($model, 'email_equipo')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model, 'email_equipo')->textInput(['maxlength' => true, 'placeholder' => 'email']) ?>
 
-    <?= $form->field($model, 'web_equipo')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model, 'web_equipo')->textInput(['maxlength' => true, 'placeholder' => 'web(opcional)']) ?>
 
-    <?= $form->field($model, 'user_equipo')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model, 'user_equipo')->textInput(['maxlength' => true, 'placeholder' => 'user']) ?>
 
-    <?= $form->field($model, 'password_equipo')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model, 'password_equipo')->passwordInput(['maxlength' => true, 'placeholder' => 'password']) ?>
 
-    <?= $form->field($model, 'authkey')->textInput(['maxlength' => true]) ?>
+  <!--  <?= $form->field($model, 'authkey')->passwordInput(['maxlength' => true, 'placeholder' => 'confimar password']) ?> -->
 
    <!-- <?= $form->field($model, 'admin')->textInput() ?>-->
 
     <div class="form-group">
-        <?= Html::submitButton('Save', ['class' => 'btn btn-success']) ?>
+        <?= Html::submitButton('Registrar', ['class' => 'btn btn-success']) ?>
     </div>
 
     <?php ActiveForm::end(); ?>

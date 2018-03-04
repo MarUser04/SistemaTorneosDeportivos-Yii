@@ -30,7 +30,8 @@ class Registros extends \yii\db\ActiveRecord
     {
         return [
             [['id_torneo', 'id_equipo', 'categoria', 'cant_participantes'], 'required'],
-            [['id_torneo', 'id_equipo', 'categoria', 'cant_participantes'], 'integer'],
+            [['id_torneo', 'id_equipo', 'cant_participantes'], 'integer'],
+            
         ];
     }
 

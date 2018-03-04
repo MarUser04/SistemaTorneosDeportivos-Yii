@@ -11,7 +11,6 @@ use app\models\Equipos;
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
 $this->title = 'Registros';
-$this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="registros-index">
 
@@ -20,15 +19,15 @@ $this->params['breadcrumbs'][] = $this->title;
 
 
     <p>
-        <?= Html::a('Create Registros', ['create'], ['class' => 'btn btn-success']) ?>
+        <?= Html::a('Crear Registros', ['create'], ['class' => 'btn btn-success']) ?>
     </p>
 
     <?= GridView::widget([
         'dataProvider' => $dataProvider,
-       // 'filterModel' => $searchModel,
+        // 'filterModel' => $searchModel,
         
         'columns' => [
-            ['class' => 'yii\grid\SerialColumn'],
+            
 
             'id_registro',
             'equipo.nombre_equipo',
@@ -46,6 +45,6 @@ $this->params['breadcrumbs'][] = $this->title;
     <?php 
         $todo = Torneos::find()->all();
         $toda = Equipos::find()->all();
-        print_r($toda[0]['nombre_equipo']);
+       
      ?>
 </div>

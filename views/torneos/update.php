@@ -5,10 +5,9 @@ use yii\helpers\Html;
 /* @var $this yii\web\View */
 /* @var $model app\models\Torneos */
 
-$this->title = 'Update Torneos: {nameAttribute}';
-$this->params['breadcrumbs'][] = ['label' => 'Torneos', 'url' => ['index']];
-$this->params['breadcrumbs'][] = ['label' => $model->id_torneo, 'url' => ['view', 'id' => $model->id_torneo]];
-$this->params['breadcrumbs'][] = 'Update';
+$this->title = 'Actualizar registro';
+
+
 ?>
 <div class="torneos-update">
 
@@ -17,5 +16,6 @@ $this->params['breadcrumbs'][] = 'Update';
     <?= $this->render('_form', [
         'model' => $model,
     ]) ?>
+
 
 </div>

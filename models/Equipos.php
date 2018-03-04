@@ -35,7 +35,7 @@ class Equipos extends \yii\db\ActiveRecord implements \yii\web\IdentityInterface
     public function rules()
     {
         return [
-            [['nombre_equipo', 'shortname_equipo', 'fecha_equipo', 'email_equipo', 'user_equipo', 'password_equipo', 'authkey'], 'required'],
+            [['nombre_equipo', 'shortname_equipo', 'fecha_equipo', 'email_equipo', 'user_equipo', 'password_equipo'], 'required'],
             [['fecha_equipo'], 'safe'],
             [['admin'], 'integer'],
             [['nombre_equipo'], 'string', 'max' => 50],
@@ -53,15 +53,15 @@ class Equipos extends \yii\db\ActiveRecord implements \yii\web\IdentityInterface
     {
         return [
             'id_equipo' => 'Id Equipo',
-            'nombre_equipo' =>Yii::t('app', 'Nombre de Equipo'),
-            'shortname_equipo' => 'Shortname Equipo',
-            'fecha_equipo' => 'Fecha Equipo',
-            'direccion_equipo' => 'Direccion Equipo',
-            'email_equipo' => 'Email Equipo',
-            'web_equipo' => 'Web Equipo',
-            'user_equipo' => 'User Equipo',
-            'password_equipo' => 'Password Equipo',
-            'authkey' => 'Authkey',
+            'nombre_equipo' =>Yii::t('app', 'Nombre'),
+            'shortname_equipo' => 'Shortname',
+            'fecha_equipo' => 'Fecha',
+            'direccion_equipo' => 'Direccion',
+            'email_equipo' => 'Email',
+            'web_equipo' => 'Web',
+            'user_equipo' => 'User',
+            'password_equipo' => 'Password',
+            'authkey' => 'Confirmar Password',
             'admin' => 'Admin',
         ];
     }

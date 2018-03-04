@@ -5,10 +5,7 @@ use yii\helpers\Html;
 /* @var $this yii\web\View */
 /* @var $model app\models\Equipos */
 
-$this->title = 'Update Equipos: {nameAttribute}';
-$this->params['breadcrumbs'][] = ['label' => 'Equipos', 'url' => ['index']];
-$this->params['breadcrumbs'][] = ['label' => $model->id_equipo, 'url' => ['view', 'id' => $model->id_equipo]];
-$this->params['breadcrumbs'][] = 'Update';
+$this->title = 'Actualizar Equipos';
 ?>
 <div class="equipos-update">
 

@@ -9,6 +9,10 @@ use yii\widgets\ActiveForm;
 
 <div class="registros-form">
 
+<?php 
+	$categorias=['principante' => 'principiante', 'aficionado' => 'aficionado', 'profesional' => 'profesional'];
+ ?>
+
 
     <?php $form = ActiveForm::begin(); ?>
 
@@ -16,7 +20,8 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'id_equipo')->dropDownList($itemsDropDown2) ?>
 
-    <?= $form->field($model, 'categoria')->textInput() ?>
+    <?= $form->field($model, 'categoria')->radioList($categorias) ?> 
+
 
     <?= $form->field($model, 'cant_participantes')->textInput() ?>
 

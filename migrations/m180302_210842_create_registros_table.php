@@ -16,7 +16,7 @@ class m180302_210842_create_registros_table extends Migration
             "id_registro" => $this->primaryKey(),
             "id_torneo" => $this->integer()->notNull(),
             "id_equipo" => $this->integer()->notNull(),
-            "categoria" => $this->integer()->notNull(),
+            "categoria" => $this->string()->notNull(),
             "cant_participantes" => $this->integer()->notNull()
         ]);
     }
